@@ -15,7 +15,9 @@ https://github.com/liquidctl/liquidctl#set-up-linux-using-systemd
 remember to reload systemctl daemon and start/enable your new service
 
 systemctl daemon-reload
+
 systemctl start liquidcfg.service
+
 systemctl enable liquidcfg.service 
 
 or liquidcfg-suspend.service
