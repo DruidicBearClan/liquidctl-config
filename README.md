@@ -1,6 +1,6 @@
 # liquidctl-config
-systemctl service files for controlling equipment with RGB headers
-works for only my settings, don't recommend using aside from for a template
+systemd service files for controlling hardware with RGB headers.
+The settings work for only my setup, don't recommend using those, you can use the template.
 
-the liquidcfg.service file is for enabling liquidctl at boot with my settings
-the liquidcfg-suspend.service file is for resuming my liquidctl settings from hybernation
+The liquidcfg.service file is for enabling liquidctl at boot with my desired settings.
+The liquidcfg-suspend.service file is for resuming liquidctl with those settings from suspend/sleep mode.
