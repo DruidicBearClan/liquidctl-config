@@ -2,13 +2,15 @@
 Description=AIO&GigabyteRGB startup service
 
 [Service]
+User=root
 Type=oneshot
 ExecStart=liquidctl initialize all
 ExecStart=liquidctl --match gigabyte set led6 color fixed ff00f7
 ExecStart=liquidctl --match gigabyte set led4 color fixed ff00f7
 ExecStart=liquidctl --match kraken set ring color fixed ff00f7
 ExecStart=liquidctl --match kraken set logo color fixed 000000
-
+TimeoutSec=0
+StandardOutput=syslog
 
 [Install]
 WantedBy=default.target
